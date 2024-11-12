@@ -1,4 +1,3 @@
-```markdown
 # Récapitulatif des Fonctions et Concepts du TP sur les Nombres Complexes
 
 ## 1. Nombres Complexes dans SageMath
@@ -47,4 +46,3 @@
    - **Exercice 3** : Placer des points dans le plan complexe, calculer des différences de points et interpréter géométriquement ces résultats.
    - **Exercice 4** : Définir et appliquer des transformations du plan complexe, et représenter les images graphiquement.
    - **Exercice 5** : Définir et dessiner des racines de l’unité et des polygones réguliers associés.
-```
