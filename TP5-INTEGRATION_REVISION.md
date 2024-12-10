@@ -6,7 +6,7 @@
   - L'ensemble des primitives inclut une constante \( C \).
   - Les primitives impliquent parfois le logarithme népérien \( \log(x) \) (noté \( \ln(x) \) en mathématiques).
 - **Intégrale définie** :
-  - Syntaxe : `integral(f, x, a, b)` pour calculer \( \int_a^b f(x) \, \mathrm{d}x \).
+  - Syntaxe : `integral(f, x, a, b)` pour calculer [\( \int_a^b f(x) \, \mathrm{d}x \)](https://cdn.discordapp.com/attachments/1234863087979462679/1316054507251040266/CodeCogsEqn.svg?ex=6759a6c5&is=67585545&hm=12da5495a3eef889f5ca8bf30e766c6262464f259fb0dbb7fdf97c0f4efef1ce&).
   - Approximation numérique : `N(integral(f, x, a, b))`.
 
 ---
