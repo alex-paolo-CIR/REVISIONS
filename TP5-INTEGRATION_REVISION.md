@@ -1,6 +1,6 @@
 ## Fiche de révision pour le TP 5 - Intégration
 
-### 1. **Concepts clés**
+### 1. **Concepts clés** 
 - **Primitives** :
   - Calcul avec SageMath : `integrate(f, x)` renvoie une primitive de \( f(x) \).
   - L'ensemble des primitives inclut une constante \( C \).
