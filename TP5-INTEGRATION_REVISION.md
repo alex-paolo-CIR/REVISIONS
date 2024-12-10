@@ -1,16 +1,12 @@
-Pour rendre le fond des formules mathématiques en blanc avec [Codecogs](https://latex.codecogs.com), ajoute le paramètre `?bg=white` à l'URL des images. Voici une version mise à jour :
-
----
-
 ## Fiche de révision pour le TP 5 - Intégration
 
 ### 1. **Concepts clés**
 - **Primitives** :
-  - Calcul avec SageMath : `integrate(f, x)` renvoie une primitive de ![primitive](https://latex.codecogs.com/svg.image?\int&space;f(x)\mathrm{d}x?bg=white).
+  - Calcul avec SageMath : `integrate(f, x)` renvoie une primitive de \( f(x) \).
   - L'ensemble des primitives inclut une constante \( C \).
-  - Les primitives impliquent parfois le logarithme népérien ![\log(x)](https://latex.codecogs.com/svg.image?\log(x)?bg=white) (noté \( \ln(x) \) en mathématiques).
+  - Les primitives impliquent parfois le logarithme népérien \( \log(x) \) (noté \( \ln(x) \) en mathématiques).
 - **Intégrale définie** :
-  - Syntaxe : `integral(f, x, a, b)` pour calculer ![int](https://latex.codecogs.com/svg.image?\int_a^b&space;f(x)\mathrm{d}x?bg=white).
+  - Syntaxe : `integral(f, x, a, b)` pour calculer \( \int_a^b f(x) \, \mathrm{d}x \).
   - Approximation numérique : `N(integral(f, x, a, b))`.
 
 ---
@@ -18,11 +14,11 @@ Pour rendre le fond des formules mathématiques en blanc avec [Codecogs](https:/
 ### 2. **Exercices**
 #### **Exercice 1 : Primitives**
 - Utiliser `integrate` pour vérifier des primitives, ex. : 
-  - ![\int\tan(t)\mathrm{d}t=-\ln(\cos(t))](https://latex.codecogs.com/svg.image?\int\tan(t)\mathrm{d}t=-\ln(\cos(t))?bg=white).
+  - \( \int \tan(t) \, \mathrm{d}t = -\ln(\cos(t)) \).
   - Vérification : `bool`.
 
 #### **Exercice 2 : Calcul et graphes**
-- Calcul exact de ![int](https://latex.codecogs.com/svg.image?\int_0^1\sqrt{1-x^2}\mathrm{d}x?bg=white) : ![\frac{\pi}{4}](https://latex.codecogs.com/svg.image?\frac{\pi}{4}?bg=white).
+- Calcul exact de \( \int_0^1 \sqrt{1-x^2} \, \mathrm{d}x \) : \( \frac{\pi}{4} \).
 - Graphe de l'intégrande avec `plot(aspect_ratio=1)`.
 
 ---
@@ -42,20 +38,20 @@ Pour rendre le fond des formules mathématiques en blanc avec [Codecogs](https:/
 
 ### 4. **Intégration numérique**
 - **Méthodes simples** :
-  - Rectangle : ![\tilde{I}=(b-a)f(a)](https://latex.codecogs.com/svg.image?\tilde{I}=(b-a)f(a)?bg=white) ou ![\tilde{I}=(b-a)f\big(\frac{a+b}{2}\big)](https://latex.codecogs.com/svg.image?\tilde{I}=(b-a)f\big(\frac{a+b}{2}\big)?bg=white).
-  - Trapèze : ![\tilde{I}=(b-a)\frac{f(a)+f(b)}{2}](https://latex.codecogs.com/svg.image?\tilde{I}=(b-a)\frac{f(a)+f(b)}{2}?bg=white).
-  - Simpson : ![\tilde{I}=\frac{b-a}{6}[f(a)+4f\big(\frac{a+b}{2}\big)+f(b)]](https://latex.codecogs.com/svg.image?\tilde{I}=\frac{b-a}{6}[f(a)+4f\big(\frac{a+b}{2}\big)+f(b)]?bg=white).
+  - Rectangle : \( \tilde{I} = (b-a)f(a) \) ou \( (b-a)f\big(\frac{a+b}{2}\big) \).
+  - Trapèze : \( \tilde{I} = (b-a)\frac{f(a)+f(b)}{2} \).
+  - Simpson : \( \tilde{I} = \frac{b-a}{6}\big[f(a)+4f\big(\frac{a+b}{2}\big)+f(b)\big] \).
 - **Méthodes composites** :
-  - Découper ![[a, b]](https://latex.codecogs.com/svg.image?[a,b]?bg=white) en \( n \) intervalles.
-  - Exemple :
-    - **Trapèzes** : ![\tilde{I}=\frac{b-a}{n}\big(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}f(x_i)\big)](https://latex.codecogs.com/svg.image?\tilde{I}=\frac{b-a}{n}\big(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}f(x_i)\big)?bg=white).
+  - Découper \( [a, b] \) en \( n \) intervalles.
+  - Exemples :
+    - **Trapèzes** : \(\tilde{I} = \frac{b-a}{n}\big(\frac{f(a)+f(b)}{2} + \sum_{i=1}^{n-1} f(x_i)\big)\).
 
 ---
 
 ### 5. **Applications et exercices**
-- Calculer ![\int_0^{5/2}f(x)\mathrm{d}x](https://latex.codecogs.com/svg.image?\int_0^{5/2}f(x)\mathrm{d}x?bg=white) avec :
+- Calculer \(\int_0^{5/2} f(x) \, \mathrm{d}x \) avec :
   - Rectangles : `h * sum(f[:-1])`.
-  - Trapèzes : ![(h/2) \times (f[0] + 2 \cdot \text{sum}(f[1:-1]) + f[-1])](https://latex.codecogs.com/svg.image?(h/2)\times(f[0]+2\cdot\text{sum}(f[1:-1])+f[-1])?bg=white).
+  - Trapèzes : \((h/2) \times (f[0] + 2 \cdot \text{sum}(f[1:-1]) + f[-1])\).
 - Représentation graphique des rectangles/trapèzes avec `Graphics` et `line`.
 
 ---
@@ -64,7 +60,5 @@ Pour rendre le fond des formules mathématiques en blanc avec [Codecogs](https:/
 - Fonction `trapezes(f, a, b, n)` :
   - Calcul numérique par trapèzes.
   - Visualisation si \( n < 15 \).
-
----
-
-Avec le fond blanc, tes formules sont plus claires ! Copie ce contenu sur GitHub.
+  
+--- 
