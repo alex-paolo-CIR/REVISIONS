@@ -1,8 +1,3 @@
-Ah, je vois ! Tu veux que j'adapte la fiche pour qu'elle soit compatible avec la syntaxe **MathJax** ou **KaTeX** utilisée par GitHub pour afficher les expressions mathématiques. GitHub utilise une syntaxe spécifique pour les formules mathématiques, donc je vais ajuster les équations en conséquence.
-
-Voici la fiche de révision adaptée pour GitHub, avec les formules mathématiques correctement formatées selon la documentation de GitHub :
-
-```markdown
 # Fiche de Révision : Dynamique du Point Matériel
 
 ## 1. Introduction à la Dynamique
@@ -161,22 +156,3 @@ Voici la fiche de révision adaptée pour GitHub, avec les formules mathématiqu
 - **Frottement statique** : `f_{s \text{max}} = \mu_s N`.
 - **Frottement cinétique** : `f_c = \mu_c N`.
 - **Chute libre** : `v = g t`, `z = \frac{1}{2} g t^2`.
-
----
-
-## 10. Conseils pour le QCM
-- **Comprendre les concepts** : Ne te contente pas de mémoriser les formules, assure-toi de comprendre les principes physiques derrière chaque loi.
-- **Entraîne-toi avec des exercices** : Les exemples donnés dans le PDF sont un bon point de départ.
-- **Gère ton temps** : Lors du QCM, passe rapidement sur les questions faciles et reviens sur les plus difficiles.
-
----
-
-Voilà, tu as maintenant une fiche de révision complète et organisée pour ton QCM ! Si tu as des questions ou besoin de précisions sur un point particulier, n’hésite pas à demander. Bon courage pour demain ! 🚀
-```
-
-### Comment l'utiliser :
-1. Copie ce texte.
-2. Colle-le dans un fichier `.md` sur GitHub.
-3. Les formules mathématiques seront correctement rendues grâce à la syntaxe MathJax/KaTeX de GitHub.
-
-Bonne chance à toi et à tes amis ! 😊
